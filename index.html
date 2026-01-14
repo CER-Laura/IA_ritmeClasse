@@ -57,7 +57,59 @@
                     width="150" height="100">
             </article>
         </section>
-        <section></section>
+        <section>
+            <h2>Deixa la teva valoració</h2>
+
+            <form action="" method="get">
+                <label for="nom">Nom:</label>
+                <input type="text" id="nom" name="nom" placeholder="Escriu el teu nom" />
+
+                <br /><br />
+
+                <label for="email">Correu electrònic:</label>
+                <input type="email" id="email" name="email" placeholder="exemple@gmail.com" />
+
+                <br /><br />
+
+                <label for="triar-ia">Quina IA vols valorar?</label>
+                <select id="triar-ia" name="triar-ia">
+                    <option value="chatgpt">ChatGPT</option>
+                    <option value="gemini">Gemini</option>
+                    <option value="claude">Claude</option>
+                </select>
+
+                <br /><br />
+
+                <p>Com valores aquesta IA?</p>
+
+                <label>
+                    <input type="radio" name="valoracio" value="excel·lent" />
+                    Excel·lent
+                </label>
+
+                <label>
+                    <input type="radio" name="valoracio" value="bona" />
+                    Bona
+                </label>
+
+                <label>
+                    <input type="radio" name="valoracio" value="millorable" />
+                    Millorable
+                </label>
+                <br /><br />
+                <label for="comentari">Comentari:</label><br />
+                <textarea id="comentari" name="comentari" rows="4" cols="40"
+                    placeholder="Escriu aquí els teus comentaris..."></textarea>
+                <br /><br />
+                <label>
+                    <input type="checkbox" name="novetats" /> Vull rebre novetats sobre
+                    IA
+                </label>
+                <br /><br />
+                <button type="submit">Enviar</button>
+            </form>
+
+        </section>
     </main>
     <footer></footer>
 </body>
