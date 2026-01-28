@@ -5,23 +5,47 @@
     <meta charset="UTF-8">
     <meta name="description" content="Breu descripció de la pàgina">
     <title>Intel·ligència artificial</title>
-    <link rel="stylesheet" href="estils.css">
+    <link rel="stylesheet" href="css/estils.css">
 </head>
 
-<body style="color: #ccc; background-color: #222; font-family: Arial, Helvetica, sans-serif; font-size: 16px;margin:30px;">
+<body>
     <header>
         <nav>
-            <ul style="list-style-type: none;">
-                <li><a href="">ChatGPT</a></li>
-                <li><a href="">Gemini</a></li>
-                <li><a href="">Claude</a></li>
+            <ul>
+                <li><a href="#chat">ChatGPT</a></li>
+                <li><a href="#gemini">Gemini</a></li>
+                <li><a href="#claude">Claude</a></li>
             </ul>
         </nav>
     </header>
     <main>
+        <section id="intro">
+            <h1>
+                ¿Qué es la inteligencia artificial y como cambiará nuestro futuro?
+            </h1>
+            <p>
+                La inteligencia artificial (también conocida como IA) ya no es ciencia
+                ficción, es parte de nuestro día a día y va a tener un papel muy
+                significativo en el futuro de la tecnología mundial. El significado
+                del término inteligencia artificial ha estado motivo de debate durante
+                muchos años y han aparecido muchas definiciones al respecto. Pero, aún
+                no existe una definición exacta y aceptada, ya que se trata de un
+                término muy genérico en el mundo de la informática. Podríamos decir
+                que se trata de cualquier técnica que permita a los ordenadores dar
+                sentido a los datos de la misma manera que lo hacen los humanos. No
+                pretenden sustituir ni reproducir el funcionamiento del cerebro
+                humano, sino el que busca ampliar sus capacidades. Lo que se busca con
+                la IA es seleccionar los puntos fuertes de los humanos, junto a la
+                capacidad informática de las máquinas, conseguir soluciones
+                colaborativas y obtener finalmente una interacción más natural entre
+                humano y máquina.
+            </p>
+            <a
+                href="https://www.actiumdigital.es/es/blog/que-es-inteligencia-artificial-como-cambiara-futuro">Fuente</a>
+        </section>
         <section>
             <h1>Intel·ligència artificial</h1>
-            <article>
+            <article id="chat">
                 <h2>ChatGPT</h2>
                 <p>
                     <a href="https://chat.openai.com/" target="_blank">ChatGPT</a> és un model de llenguatge
@@ -33,7 +57,7 @@
                 <img src="img/ChatGPT_logo.svg" title="Logo de ChatGPT" alt="Aquest es logo de ChatGPT" width="100"
                     height="100">
             </article>
-            <article>
+            <article id="gemini">
                 <h2>Gemini</h2>
                 <p>
                     <a href="https://ai.google/" target="_blank">Gemini</a> és la família de models d’IA de Google,
@@ -44,7 +68,7 @@
                 <img src="img/Gemini_sparkle_v002.svg" title="Logo de Gemini" alt="Aquest es el logo de Gemini"
                     width="100" height="100">
             </article>
-            <article>
+            <article id="claude">
                 <h2>Claude</h2>
                 <p>
                     <a href="https://www.anthropic.com/" target="_blank">Claude</a> és un model d’IA creat per
@@ -82,14 +106,14 @@
 
                 <p>Com valores aquesta IA?</p>
 
-                    <input type="radio" name="valoracio" value="excel·lent" />
-                    Excel·lent
+                <input type="radio" name="valoracio" value="excel·lent" />
+                Excel·lent
 
-                    <input type="radio" name="valoracio" value="bona" />
-                    Bona
+                <input type="radio" name="valoracio" value="bona" />
+                Bona
 
-                    <input type="radio" name="valoracio" value="millorable" />
-                    Millorable
+                <input type="radio" name="valoracio" value="millorable" />
+                Millorable
                 <br /><br />
                 <label for="comentari">Comentari:</label><br />
                 <textarea id="comentari" name="comentari" rows="4" cols="40"
