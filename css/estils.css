@@ -35,6 +35,15 @@ li a:hover {
 .articleIA {
     display: flex;
     gap: 20px;
+    justify-content: space-between;
+}
+
+.articleIA img {
+    transition: transform 1s ease;
+}
+
+.articleIA img:hover {
+    transform: scale(1.2);
 }
 
 #intro p:first-letter {
@@ -67,8 +76,17 @@ h2 {
     text-transform: uppercase;
 }
 
+#articulos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
 
-
+#articulos article {
+    background-color: #333;
+    padding: 15px;
+    border-radius: 8px;
+}
 
 @media (width < 600px) {
     p {
